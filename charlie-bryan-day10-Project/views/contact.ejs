@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <title> Site </title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact"> Contact</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="contact">
+        <div class="text-center">
+            <h2> Please leave your contact information and feedback. </h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form role="form" action="https://formspree.io/bcharlie1886@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <div>
+                            <input class="form-control" type="text" id="contact-name" name="name" placeholder="Full name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-email">Email</label>
+                        <div>
+                            <input type="email" id="contact-email" name="_replyto" placeholder="@example.com" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-message">Message</label>
+                        <div class="col-sm-10">
+                            <textarea id="contact-message" name="message" placeholder="Type your message"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <button type="submit" value="send">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

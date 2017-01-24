@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Bulletin Board</title>
+    <style type="text/css">
+        #body{
+            height = 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> ENTER A MESSAGE </h1>
+    <form action="/messages/create" method="post">
+        <input type="text" name="title" placeholder="name"> <br>
+        <input type="textarea" name="body" placeholder="enter a message..." id="body"> <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+    <ul>
+        <% for(var i = 0; i < data.length; i++){ %>
+            <li> <a href= "/messages/<%= data[i].id %>" > <%= data[i].title %> </a>
+            <% } %>
+    </ul>
+</body>
+
+</html>

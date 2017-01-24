@@ -1,0 +1,147 @@
+body{
+	background-image:url("background.jpg");
+	color:white;
+	font-family:Arial;
+
+}
+
+.centeredBox {
+  border: 5px dotted white;
+  width: 300px;
+  height:80px;
+
+  position: absolute;
+
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+
+}
+
+.centeredBox2 {
+  border: 5px white;
+  width: 300px;
+  height:80px;
+
+  position: absolute;
+
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+
+}
+li{
+	display:inline;
+}
+
+ul{
+	float:right;
+	font-family: arial;
+
+}
+
+h1{
+
+	text-align:center;
+	
+
+
+}
+
+.projectbox{
+	background-color:gray;
+	position:fixed;
+	bottom: 0;
+	left:0:;
+	padding: 10px 12px;
+}
+
+ul li a {
+	text-decoration: none;
+	color:white;
+	display:inline-block;
+	padding:0 10px;
+
+}
+
+.cube1{
+	width: 400px;
+	height:400px;
+	margin:10px;
+	float:left;
+	/*background-image:url("http://cat-wallpaper.ambientcat.com/wallpapers-400-800/Maine-Coon-Bicolor-kitten-Wondrous-cats-with-tufts-on-their-ears-6.jpg");*/
+	clear:right;
+
+}
+
+.cube2{
+	width: 400px;
+	height:400px;
+	margin:10px;
+	float:left;
+	background-image:url("reading.jpg");
+	clear:right;
+
+}
+
+.cube3{
+	width: 400px;
+	height:400px;
+	margin:10px;
+	float:left;
+	background-image:url("coding.jpg");
+	clear:right;
+
+}
+
+.cube4{
+	width: 400px;
+	height:400px;
+	margin:10px;
+	float:left;
+	background-image:url("food.jpg");
+	clear:right;
+
+}
+
+a{
+	color:yellow;
+	text-decoration: none;
+}
+
+a:hover{
+	 background-color:black;
+}
+
+.project{
+	text-align:center;
+	color:yellow;
+}
+@media all and (max-width:960px){
+
+	body{
+
+		background-image:url("newBackground.jpg");
+	}
+
+	.cube2,.cube3,.cube4{
+		width:200px;
+		height:200px;
+		margin:10px;
+		display:inline-block;
+		clear:right;
+	}
+}
+.dolphinPicture {
+margin-top: 50px;
+}
+
+.yellow {
+color: yellow;
+}
+
+.blue{
+    color: blue;
+}

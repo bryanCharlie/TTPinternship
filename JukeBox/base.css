@@ -1,0 +1,152 @@
+body {
+     background: url('imgs/music-guitar-background-yellow-illustrator-art.jpg') fixed;
+     background-size: cover;
+     max-height: 100%;
+ }
+
+
+.functions {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 500px;
+}
+
+.functions div {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: no-repeat;
+}
+
+#search {
+    padding: 0;
+    border: none;
+    background: none no-repeat;
+}
+
+img {
+    outline: none;
+    margin-top: 6%;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.search-box {
+    position: fixed;
+    top: 7%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 500px;
+}
+
+#song-input {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    border: 6px solid black;
+    padding: 15px;
+}
+
+form div {
+    float: left;
+}
+
+.text-center {
+    clear: left;
+}
+
+.song-container {
+    margin-top: 15%;
+}
+
+.search-container {
+    margin-top: 16%;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.song-list {
+    clear: both;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-right: 15px;
+    border: 6px solid black;
+    max-width: 125px;
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+li {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+    .song-list {
+        clear: both;
+        margin: auto;
+        margin-top: 65%;
+        padding-right: 15px;
+        border: 6px solid black;
+        max-width: 400px;
+        max-height: 300px;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 50px;
+    }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #projects {
+        /* default height landscape*/
+        height: 1024px;
+    }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+    .song-list {
+        clear: both;
+        margin: auto;
+        margin-top: 65%;
+        padding-right: 15px;
+        border: 6px solid black;
+        max-width: 400px;
+        max-height: 300px;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    li {
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 50px;
+    }
+}
+
+    @media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+        #projects {
+            height: 568px;
+        }
+        .a {
+            font-size: 80px !important;
+        }
+    }
+
