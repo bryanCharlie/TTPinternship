@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser'),
     pg = require('pg'),
-    connectionString = 'postgres://' + 'postgres' + ':' +
+    connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' +
     process.env.POSTGRES_PASSWORD + '@localhost/db'
 
 app.use(bodyParser.urlencoded({ extended: false }))
